@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,13 +11,13 @@
         <a class="navigation-logo" href="index.html"> <img class="page-header-logo" alt="Логотип городка Седона" src="images/logo.svg" width="140" height="70.05"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html" >Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -35,7 +36,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -136,7 +137,7 @@
             <p class="hotel-desciption">Гостиница</p>
             <span class="product-card-price">От 4000 ₽</span>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="" type="button">В  избранное</button>
+            <button class="learn-more" type="button">В  избранное</button>
             <figure>
               <img class="star-rating" src="images/Star4.svg" width="140" height="37" alt="4 звезды">
               <figcaption class="visually-hidden">
@@ -153,7 +154,7 @@
               <p class="hotel-desciption">Гостиница</p>
               <span class="product-card-price">От 5000 ₽</span>
               <a class="hotel-card-button button" href="#">подробнее</a>
-              <button class="" type="button">в избранном</button>
+              <button class="learn-more" type="button">в избранном</button>
               <figure>
                 <img class="star-rating" src="images/Star4.svg" width="140" height="37" alt="4 звезды">
                 <figcaption class="visually-hidden">
@@ -170,7 +171,7 @@
                 <p class="hotel-desciption">Гостиница</p>
                 <span class="product-card-price">От 2500 ₽</span>
                 <a class="hotel-card-button button" href="#">подробнее</a>
-                <button class="" type="button">В  избранное</button>
+                <button class="learn-more" type="button">В  избранное</button>
                 <figure>
                   <img class="star-rating" src="images/Star3.svg" width="140" height="37" alt="3 звезды">
                   <figcaption class="visually-hidden">
@@ -230,30 +231,27 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">VK</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="hhttps://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-          </ul>
-      <section class="footer-phone-adress">
-          <address class="footer-phone">
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
-      </section>
-          <a class="footer-logo" href="https://htmlacademy.ru/"> <img class="page-footer-logo" alt="Логотип .html academy" src="#"></a>
-  </footer>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-button" href="https://vk.com/htmlacademy"><img class="footer-icon" src="images/vk.svg" width="24" height="14" alt="Иконка Вконтакте">
+            <span class="visually-hidden">VK</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-button" href="hhttps://t.me/htmlacademy"><img class="footer-icon" src="images/telegram.svg" width="18" height="15.1" alt="Иконка Телеграма">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru"><img class="footer-icon" src="images/youtube.svg" width="22" height="17" alt="Иконка Ютуба">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <address class="footer-phone">
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+  </address>
+      <a class="footer-logo" href="https://htmlacademy.ru/"> <img class="page-footer-logo" alt="Логотип .html academy" src="images/HTMLAcademy.svg" width="114.9" height="32.9"></a>
+</footer>
   </body>
   </html>
