@@ -47,13 +47,14 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <section class="catalog-filter">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-img" alt="Главная страница" width="12" height="12" src="images/breadcrumbshome.svg">
+            <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-img" alt="Главная страница" width="12" height="12" src="images/breadcrumbs_home.svg">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -67,7 +68,8 @@
           </li>
         </ul>
       </header>
-        <h2 class="visually-hidden">Выбор </h2>
+       <div class="catalog-filter-container">
+      <h2 class="visually-hidden">Выбор </h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -121,6 +123,7 @@
           <button class="button apply-button" type="submit">Применить</button>
           <button class="button reset-button" type="reset">Сбросить</button>
         </div>
+      </div>
       </section>
       <section class="sorting">
       <h2 class="catalog-title">Найдено гостиниц: 38</h2>
@@ -189,7 +192,7 @@
         <ul class="hotel-list">
             <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotel-1.jpg" alt="Фото отеля Amara Resort & Spa" width="300" height="212">
+              <img class="hotel-card-image" src="images/hotel_1.jpg" alt="Фото отеля Amara Resort & Spa" width="300" height="212">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="hotel-description">Гостиница</p>
@@ -197,7 +200,7 @@
             <a class="hotel-card-button button" href="#">подробнее</a>
             <button class="favorite" type="button">В  избранное</button>
             <figure>
-              <img class="star-rating" src="images/Star4.svg" width="140" height="37" alt="4 звезды">
+              <img class="star-rating" src="images/star4.svg" width="140" height="37" alt="4 звезды">
               <figcaption class="visually-hidden">
                 Рейтинг отеля - 4 звезды
               </figcaption>
@@ -206,7 +209,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotel-2.jpg" alt="Фото отеля Villas at Poco Diablo" width="300" height="212">
+                <img class="hotel-card-image" src="images/hotel_2.jpg" alt="Фото отеля Villas at Poco Diablo" width="300" height="212">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="hotel-description">Гостиница</p>
@@ -214,7 +217,7 @@
               <a class="hotel-card-button button" href="#">подробнее</a>
               <button class="favorite favorite-current" type="button">в избранном</button>
               <figure>
-                <img class="star-rating" src="images/Star4.svg" width="140" height="37" alt="4 звезды">
+                <img class="star-rating" src="images/star4.svg" width="140" height="37" alt="4 звезды">
                 <figcaption class="visually-hidden">
                   Рейтинг отеля - 4 звезды
                 </figcaption>
@@ -223,7 +226,7 @@
             </li>
             <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-3.jpg" alt="Фото отеля Desert Quail Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotel_3.jpg" alt="Фото отеля Desert Quail Inn" width="300" height="212">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 </a>
                 <p class="hotel-description">Гостиница</p>
@@ -231,7 +234,7 @@
                 <a class="hotel-card-button button" href="#">подробнее</a>
                 <button class="favorite" type="button">В  избранное</button>
                 <figure>
-                  <img class="star-rating" src="images/Star3.svg" width="140" height="37" alt="3 звезды">
+                  <img class="star-rating" src="images/star3.svg" width="140" height="37" alt="3 звезды">
                   <figcaption class="visually-hidden">
                     Рейтинг отеля - 3 звезды
                   </figcaption>
@@ -240,15 +243,15 @@
             </li>
             <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel-4.jpg" alt="Фото отеля GreenTree Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotel_4.jpg" alt="Фото отеля GreenTree Inn" width="300" height="212">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
                 </a>
                 <p class="hotel-description">Гостиница</p>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a class="hotel-card-button button" href="#">подробнее</a>
-                <button class="" type="button">В  избранное</button>
+                <button class="favorite" type="button">В  избранное</button>
                 <figure>
-                  <img class="star-rating" src="images/Star3.svg" width="140" height="37" alt="2 звезды">
+                  <img class="star-rating" src="images/star3.svg" width="140" height="37" alt="2 звезды">
                   <figcaption class="visually-hidden">
                     Рейтинг отеля - 2 звезды
                   </figcaption>
@@ -287,8 +290,10 @@
               <span>Подписаться</span>
             </button>
       </section>
+    </div>
     </main>
     <footer class="page-footer">
+      <div class="page-footer-container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-button" href="https://vk.com/htmlacademy"><img class="footer-icon" src="images/vk.svg" width="24" height="14" alt="Иконка Вконтакте">
@@ -309,7 +314,8 @@
       <address class="footer-phone">
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
   </address>
-      <a class="footer-logo" href="https://htmlacademy.ru/"> <img class="page-footer-logo" alt="Логотип .html academy" src="images/HTMLAcademy.svg" width="114.9" height="32.9"></a>
+      <a class="footer-logo" href="https://htmlacademy.ru/"> <img class="page-footer-logo" alt="Логотип .html academy" src="images/html_academy.svg" width="114.9" height="32.9"></a>
+    </div>
 </footer>
   </body>
   </html>

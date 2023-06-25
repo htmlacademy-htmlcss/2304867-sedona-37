@@ -30,17 +30,29 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color:black;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
 }
 
 .page-header {
   color:black;
   background: white;
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
 }
 
 .navigation-link {
@@ -56,7 +68,7 @@ body {
 }
 
 .hero {
-  background-image: url("../images/index-background.jpg");
+  background-image: url("../images/index_background.jpg");
   color: black;
   background-color: white;
   background-repeat: no-repeat;
@@ -94,9 +106,6 @@ body {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 96px 258px 104px;
   gap: 10px;
@@ -275,13 +284,6 @@ body {
   color:#000000;
 }
 
-.catalog-filter {
-  color: #FFFFFF;
-  background-image: url(../images/filter_background.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 .reset-button {
   background-color: unset;
 }
@@ -297,8 +299,94 @@ body {
   color: white;
   background-color: #82B3D3;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .favorite-current {
   background-color: #7DB54F;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 507px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  width: 268px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-social-list {
+  width: 142px;
+  margin-left: 0;
+  margin-right: 41.5px;
+}
+
+.footer-logo {
+  width: 115px;
+  margin-left: 41.5px;
+  margin-right: 0;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.catalog-filter {
+  color: #FFFFFF;
+  background-image: url(../images/filter_background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-header {
+  width: 1060px;
+  margin-bottom: 40px;
+
+}
+
+.catalog-filter-container {
+  width: 1060px;
+  margin: 35px 70px 70px 70px;
 }
