@@ -50,7 +50,7 @@
     <main class="main-inner main-container">
       <div class="page-container">
       <section class="catalog-filter">
-      <header class="inner-header">
+      <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -59,15 +59,10 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z" fill="white"/>
-              </svg>
-          </li>
-          <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
+      </section>
        <div class="catalog-filter-container">
       <h2 class="visually-hidden">Выбор </h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -281,10 +276,10 @@
             </ul>
       </section>
       <section class="catalog-subscribe">
-        <h2 class="catalog-subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="main-title catalog-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="catalog-subscribe-email">Email</label>
+            <label class="visually-hidden" for="catalog-subscribe-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">
               <span>Подписаться</span>
