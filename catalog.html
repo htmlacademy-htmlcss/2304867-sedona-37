@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html"> <img class="page-header-logo" alt="Логотип городка Седона" src="images/logo.svg" width="140" height="70.05"></a>
@@ -42,7 +43,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">Хочу сюда!</a>
+            <a class="nav-button button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -127,7 +128,8 @@
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button view-button" href="#">
+        <div class="catalog-view">
+        <a class="view-button" href="#">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_33548_2035)">
             <path d="M20 17H16V23H20V17Z" fill="black"/>
@@ -146,7 +148,7 @@
             </svg>
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button view-button" href="#">
+        <a class="view-button" href="#">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_33548_2210)">
             <path d="M32 29H16V31H32V29Z" fill="black"/>
@@ -161,7 +163,7 @@
             </svg>
           <span class="visually-hidden">Показать одиночно</span>
         </a>
-        <a class="button view-button" href="#">
+        <a class="view-button" href="#">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_33548_2388)">
             <path d="M18 17H16V19H18V17Z" fill="black"/>
@@ -182,20 +184,20 @@
             </svg>
           <span class="visually-hidden">Показать список</span>
         </a>
+        </div>
       </section>
       <section class="main-catalog">
         <ul class="hotel-list">
             <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="images/hotel_1.jpg" alt="Фото отеля Amara Resort & Spa" width="300" height="212">
+              <img class="hotel-card-image" src="images/hotel_1.jpg" alt="Фото отеля Amara Resort & Spa" width="300" height="212"></a>
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-            </a>
             <p class="hotel-description">Гостиница</p>
             <span class="product-card-price">От 4000 ₽</span>
             <a class="hotel-card-button button" href="#">подробнее</a>
-            <button class="favorite" type="button">В  избранное</button>
-            <figure>
-              <img class="star-rating" src="images/star4.svg" width="140" height="37" alt="4 звезды">
+            <button class="button favorite" type="button">В  избранное</button>
+            <figure class="star-rating">
+              <img src="images/star4.svg" width="140" height="37" alt="4 звезды">
               <figcaption class="visually-hidden">
                 Рейтинг отеля - 4 звезды
               </figcaption>
@@ -204,15 +206,14 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotel_2.jpg" alt="Фото отеля Villas at Poco Diablo" width="300" height="212">
+                <img class="hotel-card-image" src="images/hotel_2.jpg" alt="Фото отеля Villas at Poco Diablo" width="300" height="212"></a>
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-              </a>
               <p class="hotel-description">Гостиница</p>
               <span class="product-card-price">От 5000 ₽</span>
               <a class="hotel-card-button button" href="#">подробнее</a>
-              <button class="favorite favorite-current" type="button">в избранном</button>
-              <figure>
-                <img class="star-rating" src="images/star4.svg" width="140" height="37" alt="4 звезды">
+              <button class="button favorite favorite-current" type="button">в избранном</button>
+              <figure class="star-rating">
+                <img src="images/star4.svg" width="140" height="37" alt="4 звезды">
                 <figcaption class="visually-hidden">
                   Рейтинг отеля - 4 звезды
                 </figcaption>
@@ -221,15 +222,14 @@
             </li>
             <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel_3.jpg" alt="Фото отеля Desert Quail Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotel_3.jpg" alt="Фото отеля Desert Quail Inn" width="300" height="212"></a>
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
-                </a>
                 <p class="hotel-description">Гостиница</p>
                 <span class="product-card-price">От 2500 ₽</span>
                 <a class="hotel-card-button button" href="#">подробнее</a>
                 <button class="favorite" type="button">В  избранное</button>
-                <figure>
-                  <img class="star-rating" src="images/star3.svg" width="140" height="37" alt="3 звезды">
+                <figure class="star-rating">
+                  <img src="images/star3.svg" width="140" height="37" alt="3 звезды">
                   <figcaption class="visually-hidden">
                     Рейтинг отеля - 3 звезды
                   </figcaption>
@@ -238,15 +238,14 @@
             </li>
             <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="images/hotel_4.jpg" alt="Фото отеля GreenTree Inn" width="300" height="212">
+                  <img class="hotel-card-image" src="images/hotel_4.jpg" alt="Фото отеля GreenTree Inn" width="300" height="212"></a>
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
-                </a>
                 <p class="hotel-description">Гостиница</p>
                 <span class="product-card-price">От 1500 ₽</span>
                 <a class="hotel-card-button button" href="#">подробнее</a>
                 <button class="favorite" type="button">В  избранное</button>
-                <figure>
-                  <img class="star-rating" src="images/star3.svg" width="140" height="37" alt="2 звезды">
+                <figure class="star-rating">
+                  <img src="images/star3.svg" width="140" height="37" alt="2 звезды">
                   <figcaption class="visually-hidden">
                     Рейтинг отеля - 2 звезды
                   </figcaption>
@@ -278,9 +277,9 @@
       <section class="catalog-subscribe">
         <h2 class="main-title catalog-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="catalog-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="catalog-subscribe-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">
               <span>Подписаться</span>
             </button>
@@ -312,5 +311,6 @@
       <a class="footer-logo" href="https://htmlacademy.ru/"> <img class="page-footer-logo" alt="Логотип .html academy" src="images/html_academy.svg" width="114.9" height="32.9"></a>
     </div>
 </footer>
+</div>
   </body>
   </html>
