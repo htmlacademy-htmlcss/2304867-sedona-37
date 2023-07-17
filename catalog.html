@@ -49,9 +49,8 @@
       </nav>
     </header>
     <main class="main-inner main-container">
-      <div class="page-container">
       <section class="catalog-filter">
-      <section class="inner-header">
+       <div class="catalog-filter-container">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -63,10 +62,8 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </section>
-       <div class="catalog-filter-container">
-      <h2 class="visually-hidden">Выбор </h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+      <h2 class="visually-hidden">Выбор</h2>
+        <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -113,12 +110,14 @@
               </li>
             </ul>
           </fieldset>
-        </form>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          </fieldset>
         <div class="price-filter">
-          <p class="catalog-filter-title">Стоимость, ₽:</p>
           <button class="button apply-button" type="submit">Применить</button>
           <button class="button reset-button" type="reset">Сбросить</button>
         </div>
+      </form>
       </div>
       </section>
       <section class="sorting">
@@ -284,7 +283,6 @@
               <span>Подписаться</span>
             </button>
       </section>
-    </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
